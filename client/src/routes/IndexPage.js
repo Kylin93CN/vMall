@@ -1,16 +1,20 @@
 import React from 'react';
 import { connect } from 'dva';
+import { Row, Col } from 'antd';
 import styles from './IndexPage.css';
 
-function IndexPage() {
+const IndexPage = ({children}) => {
   return (
     <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
+      <Row className={styles.header}>
+        <Col span={24}>header</Col>
+      </Row>
+      <Row className={styles.body}>
+        <Col className={styles.sider} span={6}>sider</Col>
+        <Col className={styles.main} span={18}>
+          {children}
+        </Col>
+      </Row>
     </div>
   );
 }
