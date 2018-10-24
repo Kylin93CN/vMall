@@ -4,22 +4,21 @@
 }
 .header {
   width: 100%;
-  height: 50px;
-  background-color:brown;
+  height: 30px;
+  background-color:#f6f6f6;
 }
 
 .body {
   width: 100%;
   height: calc(100vh - 50px);
-  background-color:blue;
 }
 
 .sider {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   height: 100%;
 }
 
 .main {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 100%;
 }
