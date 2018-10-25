@@ -1,0 +1,24 @@
+
+.headerLeft {
+  float: left;
+  margin-top: 5px;
+  li {
+    float: left;
+    list-style: none;
+  }
+}
+
+.headerRight {
+  float: right;
+  margin-top: 5px;
+  li {
+    float: left;
+    list-style: none;
+  }
+}
+
+.headerMenu {
+  border-left: 1px solid gray;
+}
+
+
