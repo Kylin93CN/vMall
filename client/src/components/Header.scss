@@ -5,15 +5,58 @@
   li {
     float: left;
     list-style: none;
+    padding-right: 10px;
   }
+  span {
+    font-size: 12px;
+    color: #1e1e1e;
+  }
+  span:last-child {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li:last-child {
+    span:nth-child(2) {
+      font-weight: 600;
+      color: #1e1e1e;
+    }
+    span:last-child {
+      color: #0c5ca6;
+      font-weight: 500;
+    }
+  }
+  
 }
 
 .headerRight {
   float: right;
   margin-top: 5px;
+  margin-right: 40px;
+  span {
+    font-size: 12px;
+    color: #1e1e1e;
+    margin: 0 5px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   li {
     float: left;
     list-style: none;
+  }
+  .verticalLine {
+    font-size: 12px;
+    border-left: 1px solid #ddd;
+    overflow: hidden;
+    width: 0;
+  }
+  .downChoice {
+    width: 9px;
+    height: 6px;
+    background: url('../assets/indexSprite.png') -37px -13px no-repeat;
   }
 }
 
